@@ -1,4 +1,4 @@
-# ppw-2022
+# Web 1 - JS
 
 # Contact information
 chilatsergiu@gmail.com
