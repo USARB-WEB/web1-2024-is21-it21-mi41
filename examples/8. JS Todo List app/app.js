@@ -1,20 +1,14 @@
-const tasks = [
-    {
-        id: 1,
-        title: 'Task 1',
-        completed: true
-    },
-    {
-        id: 2,
-        title: 'Task 2',
-        completed: true
-    },
-    {
-        id: 3,
-        title: 'Task 3',
-        completed: false
-    },
-]
+const tasks = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tasksLocalStorage = localStorage.getItem('tasks');
+    if (tasksLocalStorage) {
+        const tasksFromDatabase = JSON.parse(tasksLocalStorage);
+        
+        tasks.push(...tasksFromDatabase);
+    }
+    renderTasks();
+});
 
 const tasksContainer = document.getElementById('tasks-container');
 
@@ -40,6 +34,7 @@ function renderTasks() {
             if(confirm('Are you sure you want to delete this task?')){
                 tasks.splice(index, 1);
                 renderTasks();
+                saveTasks();
             } 
         });
         taskItem.appendChild(taskItemDeleteButton);
@@ -57,7 +52,15 @@ function addTask() {
         title: document.getElementById('task-input').value,
         completed: false
     });
+
+    
+    saveTasks();
     renderTasks();
+}
+
+function saveTasks() {
+    const tasksJson = JSON.stringify(tasks);
+    localStorage.setItem('tasks', tasksJson);
 }
 
 renderTasks();
