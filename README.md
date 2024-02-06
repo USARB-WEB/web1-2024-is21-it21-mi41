@@ -25,5 +25,8 @@ chilatsergiu@gmail.com
 # Utils
 - Emmet abbreviations https://code.visualstudio.com/docs/editor/emmet
 
+# Examples
+- UML diagrams https://drive.google.com/file/d/1UmzcRJM_PYp4ZZGcHYP996qlweN5GX5E/view?usp=sharing
+
 # Link to video conference
 https://meet.google.com/xej-qvxf-rau
