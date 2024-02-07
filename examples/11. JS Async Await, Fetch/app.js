@@ -1,7 +1,7 @@
 const todos = [];
 
-document.addEventListener('DOMContentLoaded', () => {
-    todos.push(getTodos());
+document.addEventListener('DOMContentLoaded', async () => {
+    todos.push(...await getTodos());
     renderTodos();
 });
 
@@ -15,8 +15,7 @@ function renderTodos() {
     });
 }
 
-function getTodos() {
-    return fetch('https://jsonplaceholder.typicode.com/todos')
-      .then(response => response.json())
-      .then(json => console.log(json))
+async function getTodos() {
+    const data = await fetch('https://jsonplaceholder.typicode.com/todos')
+    return await data.json();
 }
