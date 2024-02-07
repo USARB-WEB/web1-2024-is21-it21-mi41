@@ -1,0 +1,48 @@
+/* CSS styles for the layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#loading {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    height: 10em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10em;
+}
+
+#async-loaded{
+    width: 100%;
+    background-color: red;
+    color: white;
+    height: 10em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10em;
+}
