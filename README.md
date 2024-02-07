@@ -28,5 +28,11 @@ chilatsergiu@gmail.com
 # Examples
 - UML diagrams https://drive.google.com/file/d/1UmzcRJM_PYp4ZZGcHYP996qlweN5GX5E/view?usp=sharing
 
+# Backend Tools
+- Strapi Headless CMS https://strapi.io/
+- JSON Server https://www.npmjs.com/package/json-server
+- 
+
+
 # Link to video conference
 https://meet.google.com/xej-qvxf-rau
