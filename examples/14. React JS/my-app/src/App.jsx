@@ -1,9 +1,10 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import CreateTodo from './components/CreateTodo';
+import TodoList from './components/TodoList';
 
 function App() {
   const [tasks, setTasks] = useState([]);
-
   useEffect(() => {
     const tasksLocalStorage = localStorage.getItem('tasks');
     if (tasksLocalStorage) {
@@ -11,17 +12,13 @@ function App() {
     }
   }, []);
 
-
-
-  const [newTask, setNewTask] = useState('Hello World!');
-
-
   function saveTasksToLocalStorage() {
     const tasksJson = JSON.stringify(tasks);
     localStorage.setItem('tasks', tasksJson);
   }
 
-  function addTask() {
+  function addTask(newTask) {
+    console.log(newTask);
     setTasks([
       ...tasks,
       {
@@ -30,12 +27,7 @@ function App() {
         completed: false
       }
     ]);
-    // tasks.push({
-    //   id: tasks.length + 1,
-    //   title: newTask,
-    //   completed: false
-    // });
-    setNewTask('');
+    
     saveTasksToLocalStorage();
   }
 
@@ -46,25 +38,13 @@ function App() {
 
   return (
     <>
-      <ul class="tasks" id="tasks-container">
-        {
-          tasks.length === 0 && <li>No tasks found</li>
-        }
-        {tasks.map((task, index) => (
-          <li key={index}>
-            <input type="checkbox" checked={task.completed} />
-            <label>{task.title}</label>
-            <button onClick={() => { deleteTask(index) }}>Delete</button>
-          </li>
-        ))}
-      </ul>
-      <input
-        type="text"
-        id='task-input'
-        value={newTask}
-        onChange={(e) => setNewTask(e.target.value)}
+      <TodoList
+        tasks={tasks}
+        onDelete={deleteTask}
       />
-      <button onClick={addTask}>Add</button>
+      <CreateTodo
+        addTask={addTask}
+      />
     </>
   );
 }
