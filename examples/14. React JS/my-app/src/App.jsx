@@ -2,45 +2,65 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const x = 1;
-  const y = 2;
 
-  const persons = [
-    { name: 'John', age: 20 },
-    { name: 'Jane', age: 22 },
-    { name: 'Jim', age: 25 },
-  ];
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      title: 'Task 1',
+      completed: false
+    },
+    {
+      id: 2,
+      title: 'Task 2',
+      completed: true
+    }
+  ]);
 
+  const [newTask, setNewTask] = useState('Hello World!');
 
-  const [name, setName] = useState('Sergiu');
-
-  function changeName(event) {
-    setName(event.target.value);
-    console.log(name);
+  function addTask() {
+    setTasks([
+      ...tasks,
+      {
+        id: tasks.length + 1,
+        title: newTask,
+        completed: false
+      }
+    ]);
+    // tasks.push({
+    //   id: tasks.length + 1,
+    //   title: newTask,
+    //   completed: false
+    // });
+    setNewTask('');
   }
 
+  function deleteTask(index) {
+    setTasks(tasks.filter((task, i) => i !== index));
+  }
 
   return (
-    <div>
-      <div> x = { x }</div>
-      <div> y = { y }</div>
-      <div> x + y = { x + y }</div>
-      <hr />
-      <div>
-        <ul>
-          { persons.map(person => <li>{ person.name } - { person.age }</li>) }  
-        </ul>
-      </div>
-      <hr />
-      <div>
-        <label htmlFor="">Input your name</label>
-        <input type="text" value={ name } onInput={changeName} />
-        <br />
-        Hello { name }
-        <br />
-        Reversed name { name.split('').reverse().join('') }
-      </div>
-    </div>
+    <>
+      <ul class="tasks" id="tasks-container">
+        {
+          tasks.length === 0 && <li>No tasks found</li>
+        }
+        { tasks.map((task, index) => (
+          <li key={index}>
+            <input type="checkbox" checked={task.completed} />
+            <label>{task.title}</label>
+            <button onClick={() => {deleteTask(index)}}>Delete</button>
+          </li>
+        ))}
+      </ul>
+      <input 
+        type="text" 
+        id='task-input' 
+        value={ newTask }
+        onChange={ (e) => setNewTask(e.target.value)}
+      />
+      <button onClick={addTask}>Add</button>
+    </>
   );
 }
 
