@@ -22,6 +22,19 @@ chilatsergiu@gmail.com
 ## Online
 - https://codesandbox.io/
 
+# JS frameworks(frontend)
+- React
+https://create-react-app.dev/
+
+https://react.dev/
+
+- Angular
+
+https://angular.io/
+
+- Vue
+
+https://vuejs.org/
 # Utils
 - Emmet abbreviations https://code.visualstudio.com/docs/editor/emmet
 
@@ -31,7 +44,7 @@ chilatsergiu@gmail.com
 # Backend Tools
 - Strapi Headless CMS https://strapi.io/
 - JSON Server https://www.npmjs.com/package/json-server
-- 
+
 
 
 # Link to video conference
