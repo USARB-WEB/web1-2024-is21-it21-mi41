@@ -40,6 +40,7 @@ https://vuejs.org/
 
 # Examples
 - UML diagrams https://drive.google.com/file/d/1UmzcRJM_PYp4ZZGcHYP996qlweN5GX5E/view?usp=sharing
+- ToR Example https://docs.google.com/document/d/1LOtrBfsxF2gDGBMTnSIJDu9EcnubrpAwVyCHgJg5yRQ/edit?usp=sharing
 
 # Backend Tools
 - Strapi Headless CMS https://strapi.io/
