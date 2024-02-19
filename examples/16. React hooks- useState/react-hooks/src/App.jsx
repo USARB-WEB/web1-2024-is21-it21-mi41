@@ -50,6 +50,8 @@ function App() {
   }
 
 
+  const [knownJS, setKnownJS] = useState(false);
+
 
   return (
     <>
@@ -73,6 +75,35 @@ function App() {
       </div>
       <h2>Two way data binding</h2>
       <input type="text" value={userName} onInput={(event) => handleInputChange(event)} />
+      <hr />
+      <p>
+        Do you know JavaScript? <br />
+        <label>
+          Yes
+          <input 
+            type="radio" 
+            checked={knownJS === true}
+            onClick={() => setKnownJS(true)}
+          />
+        </label>
+        <br />
+        <label>
+          No
+          <input 
+            type="radio" 
+            checked={knownJS === false}
+            onClick={() => setKnownJS(false)}
+          />
+        </label>
+
+        {
+          !knownJS && <div>You can lear it using the site <a target='_blank' href="https://javascript.info">JavaScript Info</a></div>
+        }
+        {
+          knownJS && <div>Cool! You can start to learn <a target='_blank' href="https://react.dev/">React Framerowk</a></div>
+        }
+
+      </p>
     </>
   );
 }
