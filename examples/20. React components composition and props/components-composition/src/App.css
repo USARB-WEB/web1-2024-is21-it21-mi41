@@ -1,0 +1,48 @@
+#ParentToChildPropsPass{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+}
+
+#ParentToChildPropsPass .child{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #c047a8;
+}
+
+.game-room{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #c12cc4;
+}
+
+.super-rabbit{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #1fcb4a;
+}
+
+.mini-hunter{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #4a4acb;
+}
+
+.player-ready{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #a2cb4a;
+}
+
+.game-started{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #cb4a4a;
+}
