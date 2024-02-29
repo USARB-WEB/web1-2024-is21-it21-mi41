@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 import { Provider } from 'react-redux';
-import store from './store/slices/shoppingCart';
+import store from './store';
 
 import MainPage from './pages/MainPage';
 import ContactPage from './pages/ContactPage';
