@@ -52,3 +52,16 @@ footer .footer-nav nav ul {
 }
 
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: auto 400px
+}
+
+#shopping-cart {
+  background-color: #cc0;
+  border-right: 1px solid #e7e7e7;
+  padding: 1rem;
+}
+
+
+
