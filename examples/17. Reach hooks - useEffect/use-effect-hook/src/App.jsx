@@ -1,46 +1,29 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { StrictMode, useEffect, useState } from 'react';
+import ComponentA from './components/ComponentA';
+import ComponentB from './components/ComponentB';
+import ComponentSuperEffect from './components/ComponentSuperEffect';
 
 function App() {
-
-  const [x, setX] = useState(2);
+  
+  const [showComponentA, setShowComponentA] = useState(false);
+  const [showComponentB, setShowComponentB] = useState(false);
 
   useEffect(() => {
-    setX(x + 1);
-  }, []) // execute only once on component mount
-
-
-  const [n , setN] = useState(1);
-  const [m , setM] = useState(1);
-  useEffect(() => {
-    console.log("n changed", n);
-    if(n % 2 === 0) {
-      setM(m + 1);
-    }
-  }, [n]) // execute on component mount and whenever n changes
-
-  setTimeout(() => {
-    setN(n + 1);
-  }, 1000)
+    console.log('App component rerendered');
+  });
 
   return (
-    <>
+    <StrictMode>
       <h1>useEffect Hook</h1>
-      <div>
-        <span>X=</span>
-        <span>{x}</span>
-      </div>
       <hr />
-      <div>
-        n = {n}
-      </div>
-
-      {
-        n % 2 === 0 && <div>This dis is showed just if n id odd</div>
-      }
-
-      <div>m = {m}</div>
-    </>
+      <button onClick={() => setShowComponentA(!showComponentA)}>Toggle Component A</button>
+      <button onClick={() => setShowComponentB(!showComponentB)}>Toggle Component B</button>
+      <hr />
+      {showComponentA && <ComponentA/>}
+      {showComponentB && <ComponentB/>}
+      <ComponentSuperEffect/>
+    </StrictMode>
   );
 }
 

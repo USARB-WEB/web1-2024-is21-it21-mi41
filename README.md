@@ -25,8 +25,9 @@ chilatsergiu@gmail.com
 # JS frameworks(frontend)
 - React
 https://create-react-app.dev/
-
 https://react.dev/
+- React tutorials 
+ https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ
 
 - Angular
 

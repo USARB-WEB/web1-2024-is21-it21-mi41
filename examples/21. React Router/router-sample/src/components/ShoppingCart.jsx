@@ -5,22 +5,21 @@ import { addProduct, removeProduct } from "../store/slices/shoppingCart";
 export default function ShoppingCart() {
 
     const productsFromStore = useSelector(state => state.shoppingCart.products);
-
-
-    const [itemsInCart, setItemsInCart] = React.useState(productsFromStore);
+    const dispatch = useDispatch();
 
     const removeFromShoppingCart = (id) => {
-        setItemsInCart(itemsInCart.filter(item => item.id !== id));
+        dispatch(removeProduct(id));
     }
 
     return (
         <div id="shopping-cart">
+            <strong>{ typeof productsFromStore }</strong>
             <h2>Shopping cart</h2>
-            <p>Items in the cart: 0</p>
+            <p>Items in the cart: {productsFromStore?.length}</p>
             <ul>
-                {itemsInCart.map(item => (
+                {productsFromStore?.map(item => (
                     <li key={item.id}>
-                        <span>{item.name}</span>
+                        <span>{item.title}</span>
                         <button onClick={() => {removeFromShoppingCart(item.id)}}>Remove</button>
                     </li>
                 ))}
