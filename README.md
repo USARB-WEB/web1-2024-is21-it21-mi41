@@ -42,6 +42,7 @@ https://vuejs.org/
 # Examples
 - UML diagrams https://drive.google.com/file/d/1UmzcRJM_PYp4ZZGcHYP996qlweN5GX5E/view?usp=sharing
 - ToR Example https://docs.google.com/document/d/1LOtrBfsxF2gDGBMTnSIJDu9EcnubrpAwVyCHgJg5yRQ/edit?usp=sharing
+- React MUI project sample https://github.com/USARB-WEB/react-mui-example
 
 # Backend Tools
 - Strapi Headless CMS https://strapi.io/
@@ -53,8 +54,10 @@ https://vuejs.org/
 - Angular https://material.angular.io/components/button/overview
 - Cross framework Tailwind https://tailwindui.com/
 
-  # Material design icons
-  - https://pictogrammers.com/library/mdi/
+# Material design icons
+ - https://pictogrammers.com/library/mdi/
+
+
 
 # Link to video conference
 https://meet.google.com/xej-qvxf-rau
