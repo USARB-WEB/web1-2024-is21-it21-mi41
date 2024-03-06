@@ -47,7 +47,14 @@ https://vuejs.org/
 - Strapi Headless CMS https://strapi.io/
 - JSON Server https://www.npmjs.com/package/json-server
 
+# Visual framewworks
+- React MUI https://mui.com/material-ui/getting-started/installation/
+- Vue Vuetify https://vuetifyjs.com/en/components/menus/#location
+- Angular https://material.angular.io/components/button/overview
+- Cross framework Tailwind https://tailwindui.com/
 
+  # Material design icons
+  - https://pictogrammers.com/library/mdi/
 
 # Link to video conference
 https://meet.google.com/xej-qvxf-rau
