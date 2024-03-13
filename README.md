@@ -51,6 +51,13 @@ https://vuejs.org/
 - Supabase
  https://supabase.com
  https://www.youtube.com/watch?v=dU7GwCOgvNY
+ https://www.youtube.com/watch?v=eyRdcNhDcI4
+
+ #### Supabase data handle examples
+ Create product POST https://jtwisqistmvhxlqbevmz.supabase.co/rest/v1/products
+ Get all products GET https://jtwisqistmvhxlqbevmz.supabase.co/rest/v1/products
+ Get one product GET https://jtwisqistmvhxlqbevmz.supabase.co/rest/v1/products?select*&id=eq.1
+ Delete one product DELETE https://jtwisqistmvhxlqbevmz.supabase.co/rest/v1/products?select*&id=eq.1
 
 
 # Visual framewworks
