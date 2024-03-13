@@ -47,6 +47,11 @@ https://vuejs.org/
 # Backend Tools
 - Strapi Headless CMS https://strapi.io/
 - JSON Server https://www.npmjs.com/package/json-server
+- Postman https://www.postman.com/
+- Supabase
+ https://supabase.com
+ https://www.youtube.com/watch?v=dU7GwCOgvNY
+
 
 # Visual framewworks
 - React MUI https://mui.com/material-ui/getting-started/installation/
@@ -56,7 +61,7 @@ https://vuejs.org/
 
 # Material design icons
  - https://pictogrammers.com/library/mdi/
-
+ 
 
 
 # Link to video conference
