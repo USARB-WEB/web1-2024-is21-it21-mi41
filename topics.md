@@ -10,7 +10,11 @@ Prelegeri:
 8. Biblioteca React. Instalarea si configurarea. Structura proiectului
 9. Componente React. Proprietati. Descompunerea aplicatiei intre componente.
 10. Hook-uri React: useState, useEffect. Ciclul de viata si comunicarea intre componente.
-
+11. Utilizarea router-ului in React
+12. Lucrul cu localStorage.
+13. Utilizarea bibliotecii Redux.
+14. Interactiunea aplicatiei React cu un backend API
+15. Publicarea proiectului React. Instrumentul vercel.com
 
 
 Laborator:
