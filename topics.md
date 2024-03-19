@@ -33,3 +33,13 @@ Laborator:
 13. Lucrul cu data si timpul.
 14. Modificarea arborelui DOM. Adaugare, modificare si stergere elemente.
 15. Lucrul cu codul asincron. Promise, async - await.
+16. Biblioteca React. Instalarea si configurarea. 
+17. Structura unui proiect React.
+18. Componente React. Proprietati. 
+19. Descompunerea aplicatiei React in componente.
+20. Hook-uri React: useState, useEffect. Ciclul de viata si comunicarea intre componente.
+21. Utilizarea router-ului in React
+22. Utilizarea bibliotecii Redux.
+23. Interactiunea aplicatiei React cu un backend API
+24. Publicarea proiectului React. Instrumentul vercel.com
+
