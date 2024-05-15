@@ -15,6 +15,13 @@ Prelegeri:
 13. Utilizarea bibliotecii Redux.
 14. Interactiunea aplicatiei React cu un backend API
 15. Publicarea proiectului React. Instrumentul vercel.com
+16. (IT) Utilizarea Strapi Headless CMS
+17. (IT) Conectarea aplicatiei react la backend API
+18. (IT) Biblioteca axios
+19. (IT) Metode HTTP. Get, Post, Put, Patch, Delete
+20. (IT) Utilizarea formatului JSON la comunicarea intre backend si frontend
+21. (IT) Autentificarea utilziatorilor
+22. (IT) Evaluare periodica
 
 
 Laborator:
